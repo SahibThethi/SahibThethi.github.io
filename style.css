@@ -1,0 +1,251 @@
+body{
+    overflow: hidden;
+}
+
+div.top-bar{
+    margin: -1px;
+    padding: 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 5px;
+    background-color: purple;
+}
+div.nav {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    background-color: aliceblue;
+    position: relative;
+
+}
+a.active:link, a.active:visited { 
+    text-decoration: none;
+    color: purple;
+    margin-inline: 50px;
+}
+
+a.active:hover { 
+    text-decoration: none; 
+    color: purple;
+}
+a:link, a:visited 
+{ 
+    text-decoration: none;
+    color: grey;
+    margin-inline: 50px;
+}
+a:hover { 
+    text-decoration: none; 
+    color: purple;
+}
+div.main{
+    display: flex;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 20px;
+    width: auto;
+    position: relative;
+    justify-content: center;
+    height: 100vh;
+    
+}
+div.right{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    flex: 2 60%;
+    margin-left: 5vw;
+    margin-top: 50px;
+    height: 100vh;
+    overflow: hidden;
+}
+div.left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex: 1 40%;
+    border-style: solid;
+    border-color: rgba(100, 100, 100, 0.3);
+    border-width: 1px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    height: 65vh;
+    padding-top: 50px;
+    overflow: hidden;
+}
+img{
+    border-radius: 50%;
+}
+figure{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    align-content: flex-start;
+}
+table{
+    display: flex;
+    justify-content: left;
+}
+h2 {
+    font-weight: normal;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+    color: black
+}
+h2.left {
+    justify-content: center;
+    margin-bottom: 0px;
+    text-align: center;
+    color: black;
+}
+h3 {
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    font-weight: normal;
+}
+a.email{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    color: purple;
+}
+footer{
+    display: flex;
+    background-color: aliceblue;
+    color: black;
+    border-style: solid;
+    border-color: rgba(100, 100, 100, 0.3);
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    text-align: center;
+    padding-top: 10px;
+    position: fixed;
+    bottom:0;
+    justify-content: center;
+    width: 100vw;
+}
+p.skill{
+    font-weight: bold;
+    margin: 0px;
+}
+p.skill#top{
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 30px;
+}
+progress{
+    width: 37vw;
+}
+.newTable{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+p.cred{
+    padding-top: 20px;
+}
+p.resume{
+    padding-top: 20px;
+}
+a.href{
+    color: purple;
+    margin: 0px;
+}
+@media only screen and (max-width: 800px){
+    body{
+        overflow: auto;
+    }
+    div.main{
+        display: block;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-top: 20px;
+        width: auto;
+        justify-content: center;
+        height: 100vh;
+    }
+    div.right{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        flex: 2 60%;
+        margin-left: 5vw;
+        margin-top: 50px;
+        height: 60%;
+        overflow: auto;    
+    }
+    div.left{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        flex: 1 40%;
+        border-style: solid;
+        border-color: rgba(100, 100, 100, 0.3);
+        border-width: 1px;
+        border-left: 0px;
+        border-top: 0px;
+        border-right: 0px;
+        height: 40%;
+        padding-top: 50px;
+        overflow: hidden;   
+    }
+    progress{
+        width: 60vw;
+    }
+    h2 {
+        font-weight: normal;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        color: black
+    }
+    div.nav {
+        display: flex;
+        margin: 0px;
+        padding: 20px;
+        margin-left: -8px;
+        margin-right: -8px;
+        background-color: aliceblue;
+    }
+    a:link, a:visited 
+    { 
+    text-decoration: none;
+    color: grey;
+    margin-inline: 20px;
+    }
+    a.active:link, a.active:visited { 
+        text-decoration: none;
+        color: purple;
+        margin-inline: 20px;
+    }
+    footer{
+        display: flex;
+        position: fixed;
+        text-align: center;
+        justify-content: center;
+        background-color: aliceblue;
+        color: black;
+        border-style: solid;
+        border-color: rgba(100, 100, 100, 0.3);
+        border-width: 1px;
+        border-right: 0px;
+        border-left: 0px;
+        border-bottom: 0px;
+        padding-top: 10px;
+        bottom:0;
+        width: 100%;
+    }
+    a.href{
+        color: purple;
+        margin: 0px;
+    }
+}
